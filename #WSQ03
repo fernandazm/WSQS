@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+  int x;
+  int y;
+  cout << "Give me a number" << endl;
+  cin >> x;
+  cout << "Another number please" << endl;
+  cin >> y;
+  int sum;
+  sum = x + y;
+  cout << "The sum of your two numbers is " << sum << endl;
+  int resta;
+  resta = x - y;
+  cout << "The difference of your two numbers is" << resta << endl;
+  int product;
+  product = x * y;
+  cout << "The product of two numbers is " << product << endl;
+  int division;
+  division = x / y;
+  cout << "The division of two numbers is " << division << endl;
+  float remainder;
+  remainder = x % y;
+  cout << "The remainder is " << remainder << endl;
+return 0;
+}
