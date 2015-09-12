@@ -1,0 +1,27 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+
+int main (){
+    int ran,x;
+    int tries;
+    tries = 20;
+    cout << "Im thinking a number from 0 to 100, please tell me your guess" << endl;
+    srand( time(0));
+    ran= rand()%100+0;
+while(tries>1 && ran != x)
+{
+   cin >> x;
+    if (x < ran)
+    cout << "Your guess is too low, please try again" << endl;
+    else if (x > ran)
+    cout << "Your guess is too high, please try again " << endl;
+      tries = tries-1;
+  }
+    if (x == ran)
+    cout << "Congratulations you guessed it!" << endl;
+    else if (x != ran)
+    cout << "You lost all your opportunities to guess the right number, sorry!" << endl;
+    return 0;
+ }
