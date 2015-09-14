@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+  int a;
+  int b;
+  int sum=0;
+  cout << "Please enter the lowest number of your range" << endl;
+  cin >> a;
+  cout << "Now the highest number in your range please" << endl;
+  cin >> b;
+  int number=a;
+  while (number<=b){
+    sum = sum + number;
+    number++;
+  }
+  cout << "The sum of the range of numbers given is " << sum << endl;
+  return 0;
+}
