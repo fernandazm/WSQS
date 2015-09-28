@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int sum(int x, int y){
+  return x + y;
+  }
+  int difference(int x, int y){
+    return x - y;
+	}
+int multiplication(int x, int y){
+	return x * y;
+	}
+int division(int x, int y){
+	return x / y;
+}
+int reminder(int x, int y){
+    return (x % y);
+}	
+int main(){
+  int x;
+  int y;
+  cout << "Lets play with numbers!, please tell me a number" << endl;
+  cin >> x;
+  cout << "Another number please" << endl;
+  cin >> y;
+  cout << "The sum of two numbers is " << sum(x , y) << endl;
+  cout << "The difference of two numbers is " << difference(x , y) << endl;
+  cout << "The multiplication of two numbers is " << multiplication(x , y) << endl;
+  cout << "The division of two numbers is " << division(x , y) << endl;
+  cout << "The reminder of two numbers is " << reminder(x , y) << endl;
+  return 0;
+  }
