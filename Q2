@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+long superpower(long a, long b){
+    long result = 1;
+    long veces = 0;
+    while (veces < b){
+      result = (result * a);
+      veces ++;
+    }
+    return result;
+}
+int main(){
+  int x;
+  int y;
+  cout << "Please give me a number"<< endl;
+  cin >> x;
+  cout << "Another number, please" << endl;
+  cin >> y;
+  cout << superpower(x, y);
+  return 0;
+}
