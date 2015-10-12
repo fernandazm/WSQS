@@ -1,0 +1,33 @@
+#include "BigIntegerLibrary.hh"
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+BigInteger factorial (BigInteger n){
+  if (n < 0){
+    return -1;
+  }
+  if (n==0){
+    return 1;
+  }
+  else {
+    return n * factorial(n-1);
+  }
+}
+int main(){
+  string m;
+  do{
+    string x;
+    cout << "Please tell me a positive number" << endl;
+    cin >> x;
+    BigInteger y = stringToBigInteger(x);
+    cout << factorial(y) << endl;
+    cout << "Would you like to try another number?"<< endl;
+    cin >> m;
+  } while(m == "yes");
+  if (m == "no"){
+    cout << " Have a nice day" << endl;
+  }
+  return 0;
+}
