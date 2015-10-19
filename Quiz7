@@ -1,0 +1,18 @@
+#include <iostream>
+#include <string>
+#include <string.h>
+using namespace std;
+
+int main (){
+  string frase;
+cout << "Please write down a frase, word or a number"<< endl;
+cin >> frase;
+
+  if (frase == string(frase.rbegin(), frase.rend())) {
+cout << "It is a palindrome" << endl;
+}
+  if (frase != strin(frase.rbegin(), frase.rend())) {
+ cout <<" Sorry it is not a palindrome"<< endl;
+  }
+  return 0;
+}
