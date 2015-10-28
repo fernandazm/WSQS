@@ -1,0 +1,87 @@
+#include <iostream>
+#include <vector>
+#include <cmath>
+using namespace std;
+
+float list (vector <float> v){
+float sum = 0;
+for (int i=0; i< v.size(); i++){
+  sum = sum + v[i];
+}
+return sum;
+}
+float list2 (vector <float> v2){
+  float sum = list (v2);
+  float avg = sum / v2.size ();
+  float diffs = 0.0;
+  float pows = 0.0;
+  for (int i=0; i< v2.size(); i++){
+    pows = (v2 [i] - avg) * (v2 [i] - avg );
+    diffs = diffs + pows;
+  }
+  float almost = diffs / v2.size()-1;
+  float raiz = pow (almost, .5);
+  return raiz;
+}
+int main(){
+  float a;
+  float b;
+  float c;
+  float d;
+  float e;
+  float f;
+  float g;
+  float h;
+  float i;
+  float j;
+
+  cout << "Please tell me a number" << endl;
+  cin >> a;
+  cout << "Another number please" << endl;
+  cin >> b;
+  cout << "Another number please" << endl;
+  cin >> c;
+  cout << "Another number please" << endl;
+  cin >> d;
+  cout << "Another number please" << endl;
+  cin >> e;
+  cout << "Another number please" << endl;
+  cin >> f;
+  cout << "Another number please" << endl;
+  cin >> g;
+  cout << "Another number please" << endl;
+  cin >> h;
+  cout << "Another number please" << endl;
+  cin >> i;
+  cout << "Another number please" << endl;
+  cin >> j;
+  vector <float> v (10);
+  vector <float> v2(10);
+  v [0] = a;
+  v [1] = b;
+  v [2] = c;
+  v [3] = d;
+  v [4] = e;
+  v [5] = f;
+  v [6] = g;
+  v [7] = h;
+  v [8] = i;
+  v [9] = j;
+
+  v2[0]= a;
+  v2[1]= b;
+  v2[2]= c;
+  v2[3]= d;
+  v2[4]= e;
+  v2[5]= f;
+  v2[6]= g;
+  v2[7]= h;
+  v2[8]= i;
+  v2[9]= j;
+
+  float sum = list(v);
+cout << "The sum of the numbers given is: " << sum << endl;
+cout << "The average is: " << sum / v.size() << endl;
+cout << " The standar deviation is: " << list2(v) << endl;
+return 0;
+}
