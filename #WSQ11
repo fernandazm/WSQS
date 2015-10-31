@@ -2,8 +2,8 @@
 #include "BigIntegerLibrary.hh"
 using namespace std;
 
-int up;
-int low;
+int u;
+int l;
 int nat=0;
 int non=0;
 int ly=0;
@@ -32,7 +32,7 @@ r= reverse(a);
 rep= rep+1;
 }
 if (rep == 30){
-  cout << "This is a Lynchrel number: " << n << endl;
+  cout << "The number entered is a Lynchrel number: " << n << endl;
   ly= ly+1;
 }
 else {
@@ -42,22 +42,22 @@ else {
 }
 
 int main (){
-cout << "We are going to see how many Lycherel numbers are." << endl;
- cout <<" Enter the lower bound:";
-cin >> low;
-cout << "Enter the upper bound: ";
-cin >> up;
-num = low;
-while(num <= up){
+cout << "Let's se gow many Lycherel numbers we have" << endl;
+ cout <<" Please, enter a lower bound:";
+cin >> l;
+cout << "Please, enter a upper bound: ";
+cin >> u;
+num = l;
+while(num <= u){
 rev= reverse(num);
 pal(num, rev);
 num = num + 1;
 }
 
-cout << "The numbers are between: " << low << " and " << up << endl;
-cout << " Number of natural palindromes : " << nat << endl;
-cout << " Number of non-Lycherel numbers: " << non << endl;
-cout << "Number of Lycherel numbers: " << ly << endl;
+cout << "These numbers are between: " << l << " and " << u << endl;
+cout << " The number of natural palindromes are " << nat << endl;
+cout << " Total of non-Lycherel numbers: " << non << endl;
+cout << "Finally the numbe of Lycherel numbers is: " << ly << endl;
 
 return 0;
 }
