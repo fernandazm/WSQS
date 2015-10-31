@@ -1,6 +1,7 @@
 #include <iostream>
 #include "BigIntegerLibrary.hh"
 using namespace std;
+
 int up;
 int low;
 int nat=0;
@@ -18,7 +19,7 @@ while (valid != 0){
   return invalid;
 }
 
-void palindrome(BigInteger n, BigInteger r){
+void pal(BigInteger n, BigInteger r){
   if(n == r){
 nat = nat+1;
 }
@@ -49,7 +50,7 @@ cin >> up;
 num = low;
 while(num <= up){
 rev= reverse(num);
-palindrome(num, rev);
+pal(num, rev);
 num = num + 1;
 }
 
