@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+double calculate_e(double n){
+  double e,x;
+				if(n==0){
+				e=1;
+				return e;
+				}
+   x= 1+(1/n);
+   e=pow(x,n);
+   
+ return e;
+}
+
+int main(){
+double n, e;
+cout<<"The accuracy for e is "<<endl;
+cin>>n;
+e=calculate_e(n);
+cout<<" The result is: "<<e<<endl;
+return 0;
+}
