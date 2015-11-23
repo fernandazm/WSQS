@@ -6,6 +6,14 @@ int main(){
   int y;
   cin >> x;
   cin >> y;
-     if(x >= 18){
-       cout << You are an adult << endl;
-        if(y<=
+     if(x >= y){
+        if(y< x){
+        int difference = x - y;
+        cout << "The difference of these numbres is:" << difference << endl;
+        }
+      }
+      cout << "Your first number is:" << x << endl;
+      cout << "Your second number is:" << y << endl;
+      return0;
+      }
+        
