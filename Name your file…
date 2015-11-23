@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+   int years;
+   cout << "How old are you?" << endl;
+   cin>> years;
+   
+   switch(years)
+      case 18:
+      cout<< "You do can buy some alcohol" << endl;
+      case 17:
+      cout<< "Sorry you are a minor, you cant buy alcohol" << endl;
+      case 19:
+      cout << ""You do can buy some alcohol" << endl;
+      case 20:
+      cout << "You do can buy some alcohol" << endl;
+      case 12:
+      cout << "You are baby forget it!!!!
+      
+      return0;
+      }
+     
