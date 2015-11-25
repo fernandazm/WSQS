@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int divisor (int x, int y){
+  int commond;
+if (x<=0){
+  cout << "Please give me a positive number"<<endl;
+}
+if (y<=0){
+  cout << "Please give me a positive number"<<endl;
+}
+  while (y !=0){
+    commond= y;
+    y=x%y;
+    x=commond;
+  }
+  return commond;
+}
+
+int main(){
+int x, y;
+cout << "Please introduce the numbers you want to calculate " << endl;
+cin>> x;
+cin >> y;
+cout << "The greatest common divisor is " << commond (x,y) <<endl;
+
+return 0;
+}
